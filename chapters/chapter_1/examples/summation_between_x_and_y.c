@@ -12,7 +12,7 @@ int main() {
 	scanf("%d", &y);
 
 	while(i<=y) {
-	sum += i;
+		sum += i;
 		i++;
 	}
 	printf("\nThe sum of numbers from %d to %d = %d\n", x, y, sum);
