@@ -16,10 +16,10 @@ int main() {
 		}
 	}
 
-	if (is_prime == 1) {
+ 	if (is_prime == 1) {
 		printf("\n%d is a composite number", num);
 	} else {
-		printf("\n%d is a prime number", num);
+		printf("\n%d is a prime number\n", num);
 	}
 
 	return 0;
