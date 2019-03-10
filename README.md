@@ -45,7 +45,7 @@ _Tabs_: [`infer-indentation-style`](https://www.emacswiki.org/emacs/NoTabs), [Sm
         (indent-region (point-min) (point-max) nil)))
 ```
 
-_Compiling_:
+_Compilation_:
 ```
 (defun my-compile-v1()
   (interactive)
