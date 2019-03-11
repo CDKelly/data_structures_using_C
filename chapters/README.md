@@ -1,0 +1,1 @@
+**Note**: Not all programming examples were completed in every chapter.
