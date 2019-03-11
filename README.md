@@ -45,7 +45,7 @@ _Tabs_: [`infer-indentation-style`](https://www.emacswiki.org/emacs/NoTabs), [Sm
         (indent-region (point-min) (point-max) nil)))
 ```
 
-_Compiling_:
+_Compilation_:
 ```
 (defun my-compile-v1()
   (interactive)
@@ -58,4 +58,4 @@ _Compiling_:
     
 (global-set-key (kbd "<f6>") 'my-compile-v1)
 ```
-The above code essentially just builds a string to send to the `compile` function, which is in Comint mode with `compilation-shell-minor-mode`, and then switches to the `*compilation*` buffer.
+The above code just builds a string to send to the `compile` function and then switches to the `*compilation*` buffer, which is in Comint mode. Comint essentially makes the `*compilation*` buffer interactive, which can allow me to enter stdin and navigate to the `next-error` in my C code (if need be).
