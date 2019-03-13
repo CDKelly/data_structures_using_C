@@ -51,11 +51,11 @@ _Compilation_:
   (interactive)
   (let* ((c-file (buffer-file-name (current-buffer)))
         (c-file-basename (file-name-base c-file))
-        (compile-string (concat "gcc " c-file " -o " c-file-basename " && ./" c-file-basename))
+        (compile-string (concat "gcc -Werror " c-file " -o " c-file-basename " && ./" c-file-basename))
         )
     (compile compile-string t)
     (switch-to-buffer "*compilation*")))
-    
+
 (global-set-key (kbd "<f6>") 'my-compile-v1)
 ```
-The above code just builds a string to send to the `compile` function and then switches to the `*compilation*` buffer, which is in Comint mode. Comint essentially makes the `*compilation*` buffer interactive, which can allow me to enter stdin and navigate to the `next-error` in my C code (if need be).
+The above code just builds a string to send to the `compile` function and then switches to the `*compilation*` buffer, which is in Comint mode. Comint essentially makes the `*compilation*` buffer interactive, which can allow the user to enter stdin and navigate to the `next-error` in the code (if need be).

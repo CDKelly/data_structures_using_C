@@ -1,1 +1,1 @@
-**Note**: Not all programming examples were completed in every chapter.
+**Note**: Not all programming examples and exercises were completed in every chapter. I mainly chose examples/exercises that would provide an extra programming challenge when tweaked slightly and/or shed light on a valuable programming concept (that I thought was particularly interesting or that I was initially struggling with).
