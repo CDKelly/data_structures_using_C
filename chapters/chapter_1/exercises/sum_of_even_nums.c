@@ -4,13 +4,14 @@
 // where the first given num < second given num
 
 #include <stdio.h>
+#include <stdlib.h>
 int is_even(int num) {
 	return num % 2 == 0;
 }
 
-int count_even_nums(int greater_num, int lesser_num) {
-	int diff = greater_num - lesser_num;
-	if (is_even(greater_num) || is_even(lesser_num)) {
+int count_even_nums(int a, int b) {
+	int diff = abs(a - b);
+	if (is_even(a) || is_even(b)) {
 		return diff / 2 + 1;
 	} else {
 		return diff / 2;
