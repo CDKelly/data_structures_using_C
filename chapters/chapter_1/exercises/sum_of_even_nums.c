@@ -19,14 +19,14 @@ int count_even_nums(int a, int b) {
 }
 
 int main() {
-	int l_num, g_num, i, sum = 0;
+	int l_num, g_num, sum = 0;
 
 	printf("\nEnter the lesser number l_num : \t");
 	scanf("%d", &l_num);
 	printf("\nEnter the greater number g_num : \t");
 	scanf("%d", &g_num);
 
-	for(i=l_num; i <= g_num; i++) {
+	for(int i=l_num; i <= g_num; i++) {
 		if (i % 2 == 0) {
 			sum += i;
 		}

@@ -4,12 +4,12 @@
 
 #include <stdio.h>
 int main() {
-	int is_prime = 0, i, num;
+	int is_prime = 0, num;
 
 	printf("\nEnter a positive number : \t");
 	scanf("%d", &num);
 
-	for(i=2; i < num/2; i++) {
+	for(int i=2; i < num/2; i++) {
 		if (num%i == 0) {
 			is_prime = 1;
 			break;
