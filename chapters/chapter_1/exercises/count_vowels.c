@@ -33,21 +33,14 @@ int main() {
 	scanf("%s", user_str);
 
 	int str_len = strlen(user_str);
-	const char *user_char = user_str;
-
-	printf("\ndoes match: %d\n", match(user_char, pattern));
-
-	if (strchr(user_char, 'a')) {
-		printf("\nstrchr line reached");
-	}
 
 	for(int i=0; i<str_len; i++) {
 		char curr_char = user_str[i];
-		printf("\ncurr char %c\n", user_str[i]);
-		printf("\npattern pointer: %c\n", pattern[i]);
 		if (match(&curr_char, pattern)) {
-			printf("\nthis line reached\n");
-			printf("\n=======\n");
+			count++;
 		}
 	}
+	
+	printf("\nThe number of vowels in %s : %d\n", user_str, count);
+	return 0;
 }
