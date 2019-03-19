@@ -16,3 +16,8 @@ _source_: exercise 3<br>
 * the name of an array is like a constant pointer to the 0th element in the array<br>
 * if `int a[25]`, then `a[n]` is equivalent to `*(a+n)`<br>
     * where the intent of `a+n` is to compute the address equal to `a` (a pointer) plus `n` (an integer) times the size of whatever `a` points to<br><br>
+
+[`strtol`](https://en.cppreference.com/w/c/string/byte/strtol)<br>
+_source_: exercise 23<br>
+* convert str to long
+* [example](https://www.tutorialspoint.com/c_standard_library/c_function_strtol.htm); [SO answer](https://stackoverflow.com/a/7021750)
