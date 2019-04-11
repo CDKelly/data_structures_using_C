@@ -1,6 +1,6 @@
 // exercise 17, pg. 41
 
-/* Convert a given to string to all uppercase
+/* Convert a given string to all uppercase
    and all lowercase
  */
 
