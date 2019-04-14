@@ -23,6 +23,8 @@ _source_: exercise 23<br>
 * convert str to long
 * [example](https://www.tutorialspoint.com/c_standard_library/c_function_strtol.htm); [SO answer](https://stackoverflow.com/a/7021750)<br><br>
 
+<hr>
+
 ### chapter 3
 
 [Function pointers](https://www.geeksforgeeks.org/function-pointer-in-c/)<br>
