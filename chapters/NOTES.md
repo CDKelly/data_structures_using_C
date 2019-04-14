@@ -21,4 +21,12 @@ _source_: exercise 3<br>
 [`strtol`](https://en.cppreference.com/w/c/string/byte/strtol)<br>
 _source_: exercise 23<br>
 * convert str to long
-* [example](https://www.tutorialspoint.com/c_standard_library/c_function_strtol.htm); [SO answer](https://stackoverflow.com/a/7021750)
+* [example](https://www.tutorialspoint.com/c_standard_library/c_function_strtol.htm); [SO answer](https://stackoverflow.com/a/7021750)<br><br>
+
+### chapter 3
+
+[Function pointers](https://www.geeksforgeeks.org/function-pointer-in-c/)<br>
+_source_: example 8<br>
+* point to code, not data; typically stores the start of executable code<br>
+* the function's name itself can be used to get the function's address
+* [qsort example](https://www.geeksforgeeks.org/comparator-function-of-qsort-in-c/)<br><br>
