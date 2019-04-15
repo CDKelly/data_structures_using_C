@@ -1,4 +1,4 @@
-// examples 2 and 3
+// examples 2 and 3, pgs. 72-73
 
 /* Given an array of integers find the
    min, max, and mean of the array

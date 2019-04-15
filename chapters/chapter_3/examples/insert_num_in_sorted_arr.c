@@ -1,4 +1,4 @@
-// example 8
+// example 8, pgs. 78-79
 
 /* Insert a number in an array that can be
    sorted in ascending or descending order.
@@ -50,7 +50,7 @@ int main() {
 		}
 	}
 	n++;
-	printf("\nThe array after inserting %d :", user_num);
+	printf("\nThe array after inserting %d : ", user_num);
 
 	for(int i = 0; i < n; i++) {
 		printf("\narr[%d] = %d", i, arr[i]);

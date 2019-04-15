@@ -1,4 +1,4 @@
-// example 6
+// example 6, pg. 75
 
 /* Determine whether an array contains duplicate
    nums. Print the indices of the last-most duplicate
