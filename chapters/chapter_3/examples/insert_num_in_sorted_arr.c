@@ -6,7 +6,7 @@
    in the array.
 */
 
-#include<stdio.h>
+#include <stdio.h>
 int asc_or_desc_comparison(int is_asc, int arr_num, int user_num) {
 	int result = 0;
 
