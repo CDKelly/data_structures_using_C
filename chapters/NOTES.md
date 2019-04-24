@@ -15,7 +15,7 @@ _source_: exercise 3<br>
 _source_: exercise 3<br>
 * the name of an array is like a constant pointer to the 0th element in the array<br>
 * if `int a[25]`, then `a[n]` is equivalent to `*(a+n)`<br>
-    * where the intent of `a+n` is to compute the address equal to `a` (a pointer) plus `n` (an integer) times the size of whatever `a` points to (see chapter 3 section 3.7)
+    * where the intent of `a+n` is to compute the address equal to `a` (a pointer) plus `n` (an integer) times the size of whatever `a` points to (see section 3.7: Pointers and Arrays)
     * from pgs. 68-69: `A[k] = BA(A) + w(k - lower_bound)`, where `BA` is the base address of `A`, `w` is the size of one element in memory, and `k` is index of the element whose address we're calculating<br><br>
 
 [`strtol`](https://en.cppreference.com/w/c/string/byte/strtol)<br>
