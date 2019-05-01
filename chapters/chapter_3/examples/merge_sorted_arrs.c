@@ -51,6 +51,7 @@ int main() {
 			arr3[idx3] = arr2[idx2];
 			idx2++;
 		}
+		idx3++;
 	}
 	// if arr2 still has elements in it
 	if (idx1 == n1) {
