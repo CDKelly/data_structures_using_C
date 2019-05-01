@@ -5,12 +5,12 @@
 */
 
 #include <stdio.h>
-int asc_or_desc_comparison(int *is_asc, int *num1, int *num2) {
+int asc_or_desc_comparison(int is_asc, int num1, int num2) {
 	int result = 0;
 
-	if (*is_asc && *num1 <= *num2) {
+	if (is_asc && num1 <= num2) {
 		result = 1;
-	} else if (!*is_asc && *num1 >= *num2) {
+	} else if (!is_asc && num1 >= num2) {
 		result = 1;
 	}
 
@@ -44,11 +44,11 @@ int main() {
 	int idx1 = 0, idx2 = 0, idx3 = 0;
 
 	while(idx1 < n1 && idx2 < n2) {
-		if ((*asc_or_desc_comparison)(&is_asc, &arr1[idx1], &arr2[idx2])) {
+		if ((*asc_or_desc_comparison)(is_asc, arr1[idx1], arr2[idx2])) {
 			arr3[idx3] = arr1[idx1];
 			idx1++;
 		} else {
-			arr3[idx3] = arr1[idx2];
+			arr3[idx3] = arr2[idx2];
 			idx2++;
 		}
 	}
