@@ -32,3 +32,10 @@ _source_: example 8<br>
 * point to code, not data; typically stores the start of executable code<br>
 * the function's name itself can be used to get the function's address
 * [qsort example](https://www.geeksforgeeks.org/comparator-function-of-qsort-in-c/)<br><br>
+
+Returning an array in C<br>
+_source_: example 15<br>
+I made the rookie mistake of returning a locally defined variable within a called function. I received a warning similar to the one [seen here](https://www.geeksforgeeks.org/return-local-array-c-function/). The key takeaway is that memory reserved for locally defined variables is freed after the function call is over (i.e. pointers to these local variables will point to something you don't want). This can be fixed in one of 3 ways: [SO answer](https://stackoverflow.com/a/18041130). Looking for this solution allowed to me to learn more about how variables in C should be declared, defined, used, etc.
+* data segment - stores `static` variables, which are unchangeable and whose lifespan is that of the entire program; used when the size and lifespan of variables is well known
+* stack - used for variables whose size is small(er) and whose lifespan is well controlled
+* heap - used for variables whose size and lifespan are dynamic
