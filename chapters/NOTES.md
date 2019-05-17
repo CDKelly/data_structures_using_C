@@ -38,4 +38,22 @@ _source_: example 15<br>
 I made the rookie mistake of returning a locally defined variable within a called function. I received a warning similar to the one [seen here](https://www.geeksforgeeks.org/return-local-array-c-function/). The key takeaway is that memory reserved for locally defined variables is freed after the function call is over (i.e. pointers to these local variables will point to something you don't want). This can be fixed in one of 3 ways: [SO answer](https://stackoverflow.com/a/18041130). Looking for this solution allowed to me to learn more about how variables in C should be declared, defined, used, etc.
 * data segment - stores `static` variables, which are unchangeable and whose lifespan is that of the entire program; used when the size and lifespan of variables is well known
 * stack - used for variables whose size is small(er) and whose lifespan is well controlled
-* heap - used for variables whose size and lifespan are dynamic
+* heap - used for variables whose size and lifespan are dynamic<br><br>
+
+Inserting values into a dynamically-defined multi-dimensional array<br>
+_source_: example 18<br>
+I had trouble inserting user input into a multi-dimensional array defined as such: `int *arr = (int *) malloc(rows * cols * sizeof(int))`. To humans, this is can be visualized as a _rows_ x _cols_ matrix. However, in memory this is simply a long chain of int values stored in row major order - everything in row 1 is stored sequentially, then row 2 starts where row 1 ended, and so on. As a result, giving `scanf` the address of `arr` to store user input required some calculation:<br>
+```
+	for(int i = 0; i < rows; i++) {
+		printf("\nrow %d", i+1);
+		for(int j = 0; j < cols; j++) {
+			printf("\ncol %d : ", j+1);
+			scanf("%d", &(arr[(cols * i) + j]));
+		}
+	}
+```
+* `(cols * i)` - what row do we want, or what chunk of columns are we interested in?<br>
+* `+ j` - once we know what row we're in, we can decide which column we want<br>
+* `arr[n]` - get me the value at index `n`<br>
+* `&(thing)` - give me the address in memory of `thing`<br>
+* see section 3.9: Two-dimensional arrays (more specifically: figure 3.29, the formaula(s) on pg. 95, and section 3.9.2)<br><br>
