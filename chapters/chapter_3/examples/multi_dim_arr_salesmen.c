@@ -21,6 +21,7 @@ int main() {
 	int *arr = read_arr(num_of_salesmen, num_of_prods);
 
 
+
 }
 
 int get_num_of_salesmen() {
@@ -51,5 +52,5 @@ int* read_arr(int num_of_salesmen, int num_of_prods) {
 			scanf("%d", &(arr[(num_of_prods * i) + j]));
 		}
 	}
-	return 0;
+	return arr;
 }
