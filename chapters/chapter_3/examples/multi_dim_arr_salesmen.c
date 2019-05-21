@@ -11,7 +11,6 @@
 int get_num_of_salesmen();
 int get_num_of_prods();
 int* read_arr(int s, int p);
-/* void print_arr(int *arr, int s, int p); */
 void print_total_by_salesmen(int *arr, int s, int p);
 void print_total_by_products(int *arr, int s, int p);
 
@@ -22,7 +21,6 @@ int main() {
 
 	int *arr = read_arr(num_of_salesmen, num_of_prods);
 
-	print_arr(arr, num_of_salesmen, num_of_prods);
 	print_total_by_salesmen(arr, num_of_salesmen, num_of_prods);
 	print_total_by_products(arr, num_of_salesmen, num_of_prods);
 
@@ -61,14 +59,6 @@ int* read_arr(int num_of_salesmen, int num_of_prods) {
 	return arr;
 }
 
-/* void print_arr(int *arr, int num_of_salesmen, int num_of_prods) { */
-/* 	for(int i = 0; i < num_of_salesmen; i++) { */
-/* 		for(int j = 0; j < num_of_prods; j++) { */
-/* 			printf("\narr[%d][%d] = %d", i, j, arr[(num_of_prods * i) + j]); */
-/* 		} */
-/* 	} */
-/* } */
-
 void print_total_by_salesmen(int *arr, int num_of_salesmen, int num_of_prods) {
 	int total;
 
@@ -76,7 +66,6 @@ void print_total_by_salesmen(int *arr, int num_of_salesmen, int num_of_prods) {
 		total = 0;
 		for(int j = 0; j < num_of_prods; j++) {
 			total += arr[(num_of_prods * i) + j];
-			printf("\nCURR TOTAL = %d", total);
 		}
 		printf("\nTotal sales by salesman %d = %d", i+1, total);
 	}
@@ -87,7 +76,7 @@ void print_total_by_products(int *arr, int num_of_salesmen, int num_of_prods) {
 
 	for(int j = 0; j < num_of_prods; j++) {
 		total = 0;
-		for(int i = 0; j < num_of_salesmen; i++) {
+		for(int i = 0; i < num_of_salesmen; i++) {
 			total += arr[(num_of_prods * i) + j];
 		}
 		printf("\nTotal sales for product %d = %d", j+1, total);
