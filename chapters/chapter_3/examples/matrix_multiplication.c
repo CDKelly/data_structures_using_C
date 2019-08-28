@@ -56,7 +56,7 @@ int get_dimension(bool is_row_dim, bool is_multiplicand) {
 }
 
 bool can_mult_arrs(int col1, int row2) {
-	return col1 == row2 ? true : false; //see if this can just be col1 == row2
+	return col1 == row2;
 }
 
 int* read_arr(int rows, int cols, bool is_multiplicand) {
