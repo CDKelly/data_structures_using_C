@@ -12,7 +12,6 @@
 int get_num_of_students();
 int get_num_of_subjects();
 double* read_arr(int rows, int cols);
-void set_val(double *arr, int cols, int m, int n, double val_to_set);
 double get_val(double *arr, int cols, int m, int n);
 void print_matrix(double *result, int rows, int cols);
 void print_avg_by_subject(double *arr, int rows, int cols);
@@ -68,11 +67,7 @@ double* read_arr(int num_of_students, int num_of_subjects) {
 	return arr;
 }
 
-// set double val for a 2d array that is stored in row major order
-void set_val(double *arr, int cols, int m, int n, double val_to_set) {
-	arr[(cols * m) + n] = val_to_set;
-}
-
+// get double val for a 2d array that is stored in row major order
 double get_val(double *arr, int cols, int m, int n) {
 	return arr[(cols * m) + n];
 }
