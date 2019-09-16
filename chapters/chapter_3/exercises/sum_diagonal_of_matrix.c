@@ -1,6 +1,6 @@
 // exercises 15-17, pg. 113
 
-/* Write a program that reads a matrix and sums the elements
+/* Write a program that reads a square matrix and sums the elements
    above, along, and below its main diagonal
  */
 
