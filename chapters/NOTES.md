@@ -59,3 +59,14 @@ I had trouble inserting user input into a multi-dimensional array defined as suc
 * `&(thing)` - give me the address in memory of `thing`<br>
 * see section 3.9: Two-dimensional arrays (more specifically: figure 3.29, the formaula(s) on pg. 95, and section 3.9.2)<br><br>
 
+<hr>
+
+### chapter 4
+
+Reading string from user input<br>
+_source_: example 5<br>
+There a few ways to read a string from user input:<br>
+1. `scanf()` - terminates as soon as it finds a blank space<br>
+1. `gets()` - overcomes the above obstacle but has been removed from c11, which means you might get a warning<br>
+1. `fgets()` - gathers any whitespace; does not trigger any warning<br>
+1. using `getchar()`, `getch()`, or `getche()` function repeatedly

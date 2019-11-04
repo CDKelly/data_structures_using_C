@@ -11,7 +11,6 @@ char* read_str(bool is_dest_str);
 char* append_str(char *dest_str, char *src_str);
 
 int main() {
-
 	char *dest_str = read_str(true);
 	char *src_str = read_str(false);
 
