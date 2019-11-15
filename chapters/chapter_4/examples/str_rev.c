@@ -12,7 +12,7 @@ char* str_rev(char *str);
 int main() {
 	char *str = read_str();
 
-    str_rev(str);
+	str_rev(str);
 
 	printf("The reversed string : %s", str);
 
