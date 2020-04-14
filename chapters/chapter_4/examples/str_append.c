@@ -1,4 +1,4 @@
-// example 3
+// example 3, pg. 121
 
 // Write a program to append a string to another string
 

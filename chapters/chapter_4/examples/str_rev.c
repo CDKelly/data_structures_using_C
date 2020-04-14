@@ -1,4 +1,4 @@
-// example 5
+// example 5, pgs. 123 - 124
 
 // Write a program to reverse a string
 
