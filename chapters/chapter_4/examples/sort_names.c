@@ -7,7 +7,6 @@
 
 int get_num_students();
 char* get_student_arr(int num_students);
-/* void copy_name_to_arr(char *arr, int idx); */
 char* get_student_name(int idx);
 char* get_val_in_arr(char *arr, int idx);
 void bubble_sort_arr(char *arr, int num_students);
