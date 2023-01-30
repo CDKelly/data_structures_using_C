@@ -87,7 +87,7 @@ void print_result(int matching_idx, char *patt) {
 		printf("The first index at which a matching pattern\n"
 		       "occurs is : %d", matching_idx);
 	} else {
-		printf("The given text does not contain the pattern %s", patt);
+		printf("The given text does not contain the pattern '%s'", patt);
 	}
 }
 
