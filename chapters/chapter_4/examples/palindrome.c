@@ -1,6 +1,6 @@
 // example 12, pg. 131
 
-// Alphabetically sort the names of students in an array of strings
+// Determine if a given string is a palindrome
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -41,10 +41,6 @@ bool is_palindrome(char *string) {
     int j = str_len-1;
 
     while(i <= j) {
-        printf("\n~~~~~ CURR i = %d\n", i);
-        printf("\n~~~~~ CURR j = %d\n", j);
-        printf("\n=== curr char[i] === %c\n", string[i]);
-        printf("\n=== curr char[j] === %c\n", string[j]);
         if(string[i] == string[j]) {
             i++;
             j--;

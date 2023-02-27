@@ -26,6 +26,7 @@ int main() {
 	char *substr = get_substr(orig_str, start_idx, end_idx);
 	printf("\nSubstring : %s", substr);
 
+	free(orig_str);
 	free(substr);
 	return 0;
 }
@@ -34,7 +35,7 @@ char* read_str() {
 	char *str = (char *) malloc(100 * sizeof(char));
 
 	char *input_prompt = "Enter the string from which a substring will be"
-	       " removed (no more than 100 characters) : \n";
+		   " removed (no more than 100 characters) : \n";
 
 	printf("%s", input_prompt);
 	fgets(str, 100, stdin);
