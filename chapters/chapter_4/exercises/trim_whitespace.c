@@ -53,8 +53,6 @@ char* trim_str(const char *str, int first_nonwhitespace) {
         j++;
     }
 
-    printf("\ntrimmed str = '%s'\n", trimmed_str);
-
     return trimmed_str;
 }
 
