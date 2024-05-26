@@ -1,4 +1,4 @@
-// derived from some exercise in chapter 4
+// derived from exercise 5, chapter 4, pg. 135
 
 // Replace all matches in a given string with another pattern
 // Creates new string, leaves original intact

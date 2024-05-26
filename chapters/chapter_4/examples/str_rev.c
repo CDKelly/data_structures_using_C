@@ -47,4 +47,3 @@ char* str_rev(char *str) {
 
 	return str;
 }
-
